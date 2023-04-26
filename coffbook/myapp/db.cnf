@@ -1,0 +1,4 @@
+[client]
+database = coffbook_2
+user = root
+default-character-set = utf8

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        {% comment %} <link rel="stylesheet" href="{%static 'css/login.css'%}"> {% endcomment %}
+    </head>
+    <body>
+        <nav>
+            <div class="container">
+                <img src={%static '/images/background.jpg'%} alt="backgroundPhoto" width="100%" height="100%">
+                
+                <div class="card">
+                    <div class="login_header">
+                        <h3>L O G I N</h3>
+                        <!-- <p>@utsavxtha.exe</p> -->
+                    </div>
+
+                    {% if cash != NULL %}
+                        <p> 
+                            {{cash}}
+                        </p>
+                    {% endif %}
+                    
+                    <form method='POST' action="/userRegister/">
+                        {% csrf_token %}
+                        <div class="price">
+                           <h1>Event for {{system}}</h1>
+                        </div>
+                        <div class="book_name">
+                            <input type="text" name="book_name" placeholder="Book name">
+                        </div>
+                        <div class="price">
+                            <input type="number" name="price" placeholder="Book price">
+                        </div>
+                        <div class="username">
+                            <!-- <h4>Username</h4> -->
+                            <input type="name" name="username" placeholder="Username">
+                        </div>
+
+                        <div class="username">
+                            <!-- <h4>Passcode</h4> -->
+                            <input type="email" name="email" placeholder="Email">
+                        </div>
+
+                        <div class="password">
+                            <!-- <h4>Passcode</h4> -->
+                            <input type="text" name="password" placeholder="Password">
+                        </div>
+
+                        <div class="register"> 
+                            <button type="submit">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </body>
+</html>
+

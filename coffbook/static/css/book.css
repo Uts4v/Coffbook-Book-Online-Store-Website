@@ -1,0 +1,160 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.Book_Container{
+    position: relative;
+}
+
+nav .links{
+    display: flex;
+    gap: 2rem;
+    position: absolute;
+    top:3%;
+    right: 2%;
+}
+
+nav .links a{
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    color:black;
+    font-weight: 300;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav .links a:hover{
+    border-bottom: 1px solid #C7BCA1;
+    color: #C7BCA1;
+}
+
+.Book_Container h1{
+    position: absolute;
+    top: 12%;
+    left: 37%;
+    font-family: 'Cedarville Cursive', cursive;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.Book_Container h2{
+    position: absolute;
+    top: 28%;
+    left: 34%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: grey;
+    font-size: 17px;
+}
+
+.Book_Container h3{
+    position: absolute;
+    top: 37%;
+    left: 43%;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 15px;
+    color:black;
+}
+
+.Book_Container .caard{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10rem;
+    position: absolute;
+    top: 50%;
+    left: 16%;
+    cursor: pointer;
+}
+
+.Book_Container .caard .book_card{
+    transition: 300ms all ease;
+}
+
+.Book_Container .caard .book_card:hover{
+    border: 1px solid grey;
+    box-shadow: 14px 24px 21px 4px rgba(0,0,0,0.61);
+-webkit-box-shadow: 14px 24px 21px 4px rgba(0,0,0,0.61);
+-moz-box-shadow: 14px 24px 21px 4px rgba(0,0,0,0.61);
+}
+
+.Book_Container input{
+    position: absolute;
+    top:16% ;
+    right: 10%;
+    width: 220px;
+    height: 40px;
+    text-align: center;
+    border-radius: 2rem;
+    border: 1.5px solid grey;
+    background-color: transparent;
+    padding-right: 10px;
+}
+
+.Book_Container input:hover{
+    border: 1.5px solid black;
+}
+
+.Book_Container button{
+    position: absolute;
+    top:16.5%;
+    right: 4%;
+    border-radius: 4rem;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.Book_Container button:hover{
+    border: 1px solid black;
+}
+
+/* @media only screen and (max-width: 800px) {
+    body {
+      background-color:yellow;
+    }
+
+    .Book_Container nav .links a{
+        font-size: 25px
+    }
+
+    .Book_Container h1{
+        font-size: 22px;
+        top: 11%;
+    }
+
+    .Book_Container input{
+        width:160px ;
+        height: 30px;
+        top:18%;
+        right: 20%;
+  }
+
+  .Book_Container button{
+    top: 18%;
+  }
+
+  .Book_Container h2{
+    left: 10%;
+  }
+
+  .Book_Container h3{
+    left: 35%;
+  }
+
+  .Book_Container .caard{
+    gap: 13rem;
+    left: 3%;
+  }
+  .Book_Container .caard .book_card{
+    right: 20%;
+    width: 50px;
+    height: 50px;
+  }
+
+} */

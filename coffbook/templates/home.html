@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>CoffBook</title>
+        <link rel="icon" type="image/x-icon" href="{%static '/images/ii.png'%}">
+        <link rel="stylesheet" href="{%static 'css/style.css'%}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Condiment&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        {% comment %} <!-- -------------Home Page--------------------> {% endcomment %}
+        <div class="container">
+            <div class="back11">
+            <img src="{%static '/images/back3.jpg'%}" width="100%" height="auto">
+            </div>
+            <nav>
+                    {% comment %} <button><img src="{% static '/images/nav.png' %}" width="50px" height="50px"></button>
+                    <div class="link">
+                        <a href="/Home">Home </a><br/><br/><br/>
+                        <a href="/book">Book</a><br/><br/><br/>
+                        <a href="/service">Services</a><br/><br/><br/>
+                        <a href="/contact">Contacts</a><br/><br/><br/>
+                    </div>  {% endcomment %}
+                <div class="links">
+                    <a href="/home">Home </a>
+                    <a href="/book">Book</a>
+                    <a href="/service">Services</a>
+                    <a href="/contact">Contacts</a>
+                </div>    
+            </nav>
+            <div class="logo">
+                <img src="{%static '/images/loogo.png'%}" width="250px" height="auto">
+                <h1>COFFBOOK</h1>
+                <h2>CLASSIC BOOKS</h2>
+                <h3>Book Coffee & Chill</h3>
+            </div>
+            <div class="hello">
+                <p>Coffbook is a website where you can download or read diffrent</br>
+                   books written by diffrent famous writer.Here you can download</br> or save your book from your device as pdf. Coffbook also</br> 
+                   provides you its membership which helps you to purchase</br>
+                   or rent a book from our library which is located at</br> bagbazar kathmandu.</p>
+            </div>
+        </div>
+{% comment %} <!----------- Books Colection page------------------ --> {% endcomment %}
+        <div class="Book_Container">
+            <img src="{%static '/images/bback.jpg'%}" width="100%" height="800px">
+            <h1>Books Collections</h1>
+            <h2>MAKE YOUR COFFE , SELECT A BOOK AND START COFFBOOK</h2>
+            <h3>Please select your genre</h3>
+            <input type="search" placeholder="Search here..">
+            <button type="button">Search</button>
+            <div class="caard">
+                <div class="book_card">
+                    <img src="{%static '/images/looking.jpg'%}" width="200px" height="280px">
+                    <div class="btn1">
+                        <form action="/register/" method="POST" id="systemForm">
+                            {% csrf_token %}
+                            <input name="cash" value="400" hidden> 
+                        <h2>MRP: RS.400</h2>
+                        <button type='submit'>Buy</button>
+                        </form>
+                    </div>
+                    
+                </div>
+                <div class="book_card">
+                    <img src="{%static '/images/itendss.jpeg'%}" width="200px" height="280px">
+                    <div class="btn2"> 
+
+                        <form action="/register/" method="POST" id="systemForm">
+                            {% csrf_token %}
+                            <input name="cash" value="500" hidden> 
+                            <h2>MRP: RS.500</h2>
+                            <button type="submit">Buy</button>
+                        </form>
+                    </div>
+                    
+                </div>
+                <div class="book_card">
+                   <img src="{%static '/images/six.jpg'%}" width="200px" height="280px">
+                   <div class="btn3">
+                    <form action="/register/" method="POST" id="systemForm">
+                        {% csrf_token %}
+                        <input name="cash" value="600" hidden> 
+                        <h2>MRP: RS.600</h2>
+                    <button type="submit">Buy</button>
+                    </form>
+                </div>
+                   
+                </div>
+            </div>    
+        </div>
+
+        {% comment %} <!-- ----------------------Service page------------ --> {% endcomment %}
+        <div class="service">
+                <img src="{%static '/images/back2.jpg'%}" width="100%" height="100%">
+                <h1>Our Scrvices :</h1>
+                <div class="content">
+                    <div class="cards">
+                        <h2>
+                            Free Books
+                        </h2>
+                            <p>Coffbook provies you millions of <br>
+                                free books throughout the globe. <br>
+                                You can even download it for<br>
+                                offline as pdf file. Coffbook also <br>
+                                provides you to publish your <br>
+                                own novel,stories,
+                                and many <br> more books.</p>
+                     </div>
+                    <div class="cards">
+                        <h2>
+                            Membership
+                        </h2>
+                        <p>You can be a permanent member of coffbook <br>
+                            by buying our membership. We have different Membership
+                            plans for you. If you are member of coffbook you
+                            have advantage to know about different newly arrived Books
+                            in this site and also can download infinite amout of pdf
+                            in one day. Starship is a badge which will be give to writer 
+                            to publish more than 3 books in this site and gets overall 100 
+                            stars from review. If you will be able to get this starship you
+                            will be recognized as a verified writer of coffbook.
+
+                        </p>
+                     </div>
+                    <div class="cards">
+                        <h2>
+                            Rent Book
+                        </h2>
+                     </div>
+                </div>
+            </div>
+
+            {% comment %} <!----------------- Contact page---------------------- --> {% endcomment %}
+
+            <div class="contact">
+                <img src="{%static 'images/footer3.jpg'%}" width="100%" height="400px">
+            <form method="POST" action="/contact/">
+                {% csrf_token %}
+                <div class='name'>
+                    <input name='name' type="text" placeholder="YOUR NAMES">
+                </div>
+                <div class="phone">
+                    <input name='phone' type="number" placeholder="Ph. number"></div>
+                <div class="mail">
+                    <input name='email' type="email" placeholder="YOUR EMAIL">
+                    <p>Contact us: +977986227997334 <br>
+                        Email : utsavstha033@gmail.com <br>
+                        Location : Gyaneshwor</p>
+                    <button type='submit'><img src="{%static "/images/eemail.png"%}" width="35px" height="35px"></button>
+                </div>
+            </form>
+                <div class="insta">
+                    <img src="{%static "/images/insta.png"%}" width="35px" height="35px">
+                    <a href="https://www.instagram.com/uts4v_shrestha/"><h2>Instagram</h2></a>
+                </div>
+                <div class="facebook">
+                    <img src="{%static "/images/facebook.png"%}" width="39px" height="39px">
+                    <a href="https://www.facebook.com/utsav.shrestha.7"><h2>Facebook</h2></a>
+                    <p>Created by : Utsav Shrestha <br>
+                    Location : Gyaneshwor <br> E-mail : utsavstha033@gmail.com</E-mail></p>
+                </div>
+            </div>
+    </body>
+</html>

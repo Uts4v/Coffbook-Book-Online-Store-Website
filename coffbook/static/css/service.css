@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.service{
+    position: relative;
+}
+
+nav .links{
+    display: flex;
+    gap: 2rem;
+    position: absolute;
+    top:4%;
+    right: 2%;
+}
+
+nav .links a{
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    color:white;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav .links a:hover{
+    border-bottom: 1px solid #C7BCA1;
+    color: #C7BCA1;
+}
+
+.service h1{
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    color: rgb(197, 194, 194);
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 50px;    
+}
+.service .content{
+    font-family: 'Poppins', sans-serif; 
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12rem;
+    position: absolute;
+    top: 30%;
+    left: 6%;
+}
+
+.service .content .cards{
+    border: 1px solid rgb(104, 104, 104);
+    border-radius: 2rem;
+    background-color: #c7bca1b6;
+    font-family:'Poppins', sans-serif ;
+    height: 500px;
+    width: 250px;
+    text-align: center;
+    padding: 10px;
+    transition: 300ms all ease;
+}
+
+.service .content .cards:hover{
+    border: 1px solid black;
+    box-shadow: 21px 18px 16px -1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 21px 18px 16px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 21px 18px 16px -1px rgba(0,0,0,0.75);
+}
+
+.service .content .cards h2{
+    color: rgb(104, 104, 104);
+    font-size: 20px;
+    border-bottom: 0.5px solid rgb(104, 104, 104);
+    text-align: center;
+}
+
+.service .content .cards p{
+    padding-top: 15px;
+    color: black;
+}
+
+@media screen and (max-width: 1050px) {
+    nav .links{
+        display: flex;
+        gap: 15px;
+        position: absolute;
+        top:4%;
+        right: 2%;
+    }
+
+    nav .links a{
+        font-size: 20px;
+    }
+
+    .service h1{
+        font-size: 40px;
+    }
+
+    .service .content{
+        font-family: 'Poppins', sans-serif; 
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2rem;
+        position: absolute;
+        top: 30%;
+        left: 6%;
+    }
+
+    .service .content .cards{
+        border: 1px solid rgb(104, 104, 104);
+        border-radius: 2rem;
+        background-color: #c7bca1b6;
+        font-family:'Poppins', sans-serif ;
+        height: 350px;
+        width: 250px;
+        text-align: center;
+        padding: 10px;
+        transition: 300ms all ease;
+    }
+    
+    .service .content .cards p{
+        font-size: 12px;
+}
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .service nav .links a{
+        font-size: 20px;
+    }
+
+    .service nav .links{
+        gap: 20px;
+    }
+
+    .service h1{
+        font-size: 35px;
+    }
+
+    .service .content{
+        gap: 6rem;
+    }
+
+    .service .content .cards{
+        height: 350px;
+        width: 250px;
+    }
+    
+    .service .content .cards p{
+        font-size: 12px;
+}
+
+}
+
+@media screen and (max-width: 1088px) {
+
+    .service .content .cards{
+        height: 350px;
+        width: 240px;
+    }
+    
+    .service .content{
+        gap: 30px;
+    }
+    
+    .service .content .cards p{
+        font-size: 12px;
+}
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .service .content .cards{
+        height: 300px;
+        width: 220px;
+    }
+    
+    .service .content{
+        gap: 20px;
+    }
+    
+    .service .content .cards p{
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+
+    .service .content .cards{
+        height: 260px;
+        width: 200px;
+    }
+    
+    .service .content{
+        gap: 10px;
+    }
+    
+    .service .content .cards p{
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    
+    .service .body h1{
+        font-size: 20px;
+    }
+
+    .service nav .links{
+        gap: 1px;
+    }
+
+    .service .content .cards{
+        height: 200px;
+        width: 150px;
+    }
+    
+    .service .content{
+        gap: 10px;
+    }
+    
+    .service .content .cards p{
+        font-size: 7.5px;
+    }
+
+}
